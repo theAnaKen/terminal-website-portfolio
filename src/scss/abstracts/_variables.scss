@@ -1,0 +1,23 @@
+$light-green: #32ce4b;
+$peacock-green: #086350;
+$dark-green: #062c23;
+$yellow: #ffff00;
+$light-yellow: #FFFAB6;
+$light-pink: #f5d2f1;
+$orange: #ff9a08;
+
+$main-page: (
+    background: $peacock-green,
+    container-color: $dark-green,
+    username: $light-green,
+    command: $yellow,
+    ascii-color:$light-yellow,
+    file-color: $light-pink,
+    kensole: $orange,
+);
+
+$login-page: (
+    background: $dark-green,
+    container-color: $peacock-green,
+    color: $light-yellow,
+);

@@ -1,0 +1,17 @@
+@use "../../abstracts/" as *;
+body {
+    background-color: var(--main-background);
+    @include grid-center;
+}
+
+.container {
+    @include grid-center;
+
+    background-color: var(--main-container-color);
+    color: var(--main-ascii-color);
+
+    height: 90vh;
+    width: 95vw;
+    border-radius: 1em;
+    position: relative;
+}
