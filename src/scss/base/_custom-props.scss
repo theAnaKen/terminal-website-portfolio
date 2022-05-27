@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+:root {
+    @each $prop, $val in $main-page {
+        --main-#{$prop}: #{$val};
+    }
+    @each $prop, $val in $login-page {
+        --login-#{$prop}: #{$val};
+    }
+}
