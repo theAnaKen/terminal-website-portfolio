@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
 		<title>Kensole</title>
-		<script src="js/index.js"></script>
+		<script type="module" src="js/index.js" defer></script>
 		<link rel="stylesheet" href="scss/main.scss" />
 	</head>
 	<body>
@@ -15,6 +15,17 @@
 				<div class="btn" id="cross"></div>
 				<div class="btn" id="minimize"></div>
 				<div class="btn" id="maximize"></div>
+			</div>
+			<div id="login">
+				<div class="username">
+					<label for="username">set username:</label>
+					<textarea type="text" id="username"></textarea>
+				</div>
+				<div class="password">
+					<label for="password">set Password:</label>
+					<textarea type="text" id="password"></textarea>
+				</div>
+				<!-- <a>_</a> -->
 			</div>
 		</div>
 	</body>

@@ -5,8 +5,6 @@ body {
 }
 
 .container {
-    @include grid-center;
-
     background-color: var(--main-container-color);
     color: var(--main-ascii-color);
 
