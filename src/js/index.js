@@ -1,12 +1,3 @@
-import username from "./components/Username";
-import GetElementById from "./utility/GetElementById";
+import AddPasswordDiv from "./components/add/AddPasswordDiv";
 
-let loginDiv = GetElementById("login");
-
-loginDiv.innerHTML += username;
-
-console.log(loginDiv);
-
-// console.log(parentContainer, buttons, login);
-
-// console.log(Username, password);
+AddPasswordDiv();
