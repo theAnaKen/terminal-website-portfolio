@@ -67,3 +67,5 @@ typings/
 # Parcel related files
 dist/
 .cache/
+
+.vscode/

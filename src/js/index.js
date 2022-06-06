@@ -1,3 +1,7 @@
 import AddPasswordDiv from "./components/add/AddPasswordDiv";
+// import SavePassword from "./components/add/SavePassword";
 
-AddPasswordDiv();
+if (!localStorage.getItem("username")) {
+	AddPasswordDiv();
+	// SavePassword();
+}

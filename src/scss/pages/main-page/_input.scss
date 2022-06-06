@@ -1,13 +1,13 @@
-textarea {
+input {
     background-color: transparent;
     border: none;
     // border-bottom: 1px solid var(--main-ascii-color);
     position: relative;
     width: fit-content;
-    height: 1.5rem;
+    // height: 1.5rem;
     resize: none;
     overflow: auto;
-    top: 0.4rem;
+    // top: 0.4rem;
     color: var(--login-color);
     left: -0.5rem;
     &:focus {
