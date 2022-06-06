@@ -1,3 +1,4 @@
+import Clear from "../../utility/Clear";
 import getElementById from "../../utility/GetElementById";
 import QuerySelector from "../../utility/QuerySelector";
 let loginDiv = getElementById("login");
@@ -14,6 +15,11 @@ const SavePassword = () => {
 		(e) => {
 			let passwordToSave = passwordInputField.value;
 			localStorage.setItem("password", passwordToSave);
+			passwordInputField.value = "";
+
+			setTimeout(() => {
+				Clear(loginDiv);
+			}, 1000);
 		},
 		{ once: true },
 	);
