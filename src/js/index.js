@@ -1,9 +1,8 @@
 import AddPasswordDiv from "./components/add/AddPasswordDiv";
-// // import SavePassword from "./components/add/SavePassword";
 
 let username = localStorage.getItem("username");
+let password = localStorage.getItem("password");
 
-if (!username) {
+if (!username || !password) {
 	AddPasswordDiv();
-	// SavePassword();
 }

@@ -1,27 +1,39 @@
 import Clear from "../../utility/Clear";
 import getElementById from "../../utility/GetElementById";
 import QuerySelector from "../../utility/QuerySelector";
+import HandlePassword from "../HandlePassword";
 let loginDiv = getElementById("login");
 
-console.log(loginDiv);
+// console.log(loginDiv);
 const SavePassword = () => {
 	const passwordDiv = QuerySelector(".password", loginDiv);
 	const passwordInputField = QuerySelector("input", passwordDiv);
 
-	console.log(passwordDiv, passwordInputField);
+	// console.log(passwordDiv, passwordInputField);
 
 	passwordInputField.addEventListener(
 		"blur",
 		(e) => {
-			let passwordToSave = passwordInputField.value;
-			localStorage.setItem("password", passwordToSave);
-			passwordInputField.value = "";
-
+			HandlePassword();
 			setTimeout(() => {
 				Clear(loginDiv);
 			}, 1000);
 		},
 		{ once: true },
+	);
+
+	passwordInputField.addEventListener(
+		"keypress",
+		(e) => {
+			console.log(e);
+			e.key === "Enter" ? HandlePassword() : console.log("Hello, World!");
+
+			// console.log("Hello, World!");
+			setTimeout(() => {
+				Clear(loginDiv);
+			}, 1000);
+		},
+		// { once: true },
 	);
 };
 export default SavePassword;

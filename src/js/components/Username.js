@@ -1,7 +1,7 @@
 let username = `
 <div class="username">
 	<label for="username">set username:</label>
-	<input type="text" id="username" autofocus></input>
+	<input type="text" id="username"></input>
 </div>`;
 
 export default username;

@@ -1,5 +1,5 @@
 const Clear = (parent) => {
-	return (parent.innerHTML = "");
+	return (parent.style.display = "none");
 };
 
 export default Clear;
