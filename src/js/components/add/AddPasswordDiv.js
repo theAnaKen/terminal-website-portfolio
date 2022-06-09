@@ -24,7 +24,12 @@ const AddPasswordDiv = () => {
 		"keypress",
 		(e) => {
 			// console.log(e);
-			e.key === "Enter" ? HandleLogin() : console.log("Hello, World!");
+
+			if (e.key === "Enter") {
+				HandleLogin();
+			}
+
+			// e.key === "Enter" ? HandleLogin() : console.log("Hello, World!");
 
 			// console.log("Hello, World!");
 		},

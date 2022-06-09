@@ -25,8 +25,11 @@ const SavePassword = () => {
 	passwordInputField.addEventListener(
 		"keypress",
 		(e) => {
-			console.log(e);
-			e.key === "Enter" ? HandlePassword() : console.log("Hello, World!");
+			// console.log(e);
+
+			if (e.key === "Enter") {
+				HandlePassword();
+			}
 
 			// console.log("Hello, World!");
 			setTimeout(() => {
