@@ -9,9 +9,9 @@ const HandlePassword = () => {
 	let passwordToSave = passwordInputField.value;
 	localStorage.setItem("password", passwordToSave);
 
-	setTimeout(() => {
-		passwordInputField.value = "";
-	}, 100);
+	// setTimeout(() => {
+	// 	passwordInputField.value = "";
+	// }, 100);
 };
 
 export default HandlePassword;

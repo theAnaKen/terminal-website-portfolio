@@ -33,11 +33,10 @@ const SavePassword = () => {
 			if (e.key === "Enter") {
 				HandlePassword();
 				Resize();
+				setTimeout(() => {
+					Clear(loginDiv);
+				}, 1000);
 			}
-
-			setTimeout(() => {
-				Clear(loginDiv);
-			}, 1000);
 		},
 		// { once: true },
 	);

@@ -15,7 +15,7 @@ const Resize = () => {
 		console.log(latestDiv.style);
 	});
 
-	console.log(latestDiv);
 	// }
 };
+
 export default Resize;
