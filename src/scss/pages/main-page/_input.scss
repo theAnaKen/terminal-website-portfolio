@@ -15,6 +15,7 @@ input {
     &:focus {
         color: var(--login-color);
         outline: none;
+        caret-color: var(--main-background);
     }
 }
 

@@ -15,8 +15,7 @@ const HandleUsername = () => {
 	// input getting blank is totally a feature :)
 
 	setTimeout(() => {
-		// usernameInputField.removeAttribute("autofocus");
-
+		usernameInputField.removeAttribute("autofocus");
 		SavePassword();
 	}, 1000);
 };
