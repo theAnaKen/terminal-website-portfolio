@@ -3,13 +3,14 @@ input {
     border: none;
     // border-bottom: 1px solid var(--main-ascii-color);
     position: relative;
-    width: 70%;
+    width: 70vw;
     // height: 1.5rem;
     resize: none;
     overflow: auto;
     // top: 0.4rem;
     color: var(--login-color);
     left: -0.5rem;
+
     &:focus {
         color: var(--login-color);
         outline: none;
@@ -22,9 +23,13 @@ input {
     gap: 1em;
 }
 
-// textarea::after {
-//     content: "_";
-//     top: 0;
-//     left: 0;
-//     background-color: aqua;
-// }
+@media (max-width: 600px) {
+    input {
+        width: 50vw;
+    }
+}
+@media (max-width: 333px) {
+    input {
+        width: 40vw;
+    }
+}
