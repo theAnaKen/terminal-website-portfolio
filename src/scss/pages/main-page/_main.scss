@@ -12,4 +12,37 @@ body {
     width: 95vw;
     border-radius: 1em;
     position: relative;
+    // &:last-child {
+    //     background-color: #fff;
+    // }
+    div#login > div:last-child {
+        &::after {
+            content: "█";
+            position: relative;
+            margin: 0;
+            font-size: 1.2rem;
+            // width: 1rem;
+            // top: 0;
+            left: -1.5rem;
+            animation-name: blink;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            pointer-events: none;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

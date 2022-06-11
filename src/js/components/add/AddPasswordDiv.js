@@ -4,6 +4,7 @@ import GetElementById from "../../utility/GetElementById";
 import QuerySelector from "../../utility/QuerySelector";
 // import SavePassword from "./SavePassword";
 import HandleLogin from "../HandleUsername";
+import Resize from "../ResizeInput";
 
 //----------------------------------------------------------
 let loginDiv = GetElementById("login");
@@ -27,6 +28,7 @@ const AddPasswordDiv = () => {
 
 			if (e.key === "Enter") {
 				HandleLogin();
+				Resize();
 			}
 
 			// e.key === "Enter" ? HandleLogin() : console.log("Hello, World!");

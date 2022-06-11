@@ -3,13 +3,14 @@ input {
     border: none;
     // border-bottom: 1px solid var(--main-ascii-color);
     position: relative;
-    width: 70vw;
+    width: 0.5rem;
     // height: 1.5rem;
     resize: none;
     overflow: auto;
     // top: 0.4rem;
     color: var(--login-color);
     left: -0.5rem;
+    // outline: 1px solid var(--login-color);
 
     &:focus {
         color: var(--login-color);
@@ -23,13 +24,13 @@ input {
     gap: 1em;
 }
 
-@media (max-width: 600px) {
-    input {
-        width: 50vw;
-    }
-}
-@media (max-width: 333px) {
-    input {
-        width: 40vw;
-    }
-}
+// @media (max-width: 600px) {
+//     input {
+//         width: 50vw;
+//     }
+// }
+// @media (max-width: 333px) {
+//     input {
+//         width: 40vw;
+//     }
+// }

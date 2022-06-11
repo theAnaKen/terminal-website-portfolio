@@ -2,6 +2,7 @@ import Clear from "../../utility/Clear";
 import getElementById from "../../utility/GetElementById";
 import QuerySelector from "../../utility/QuerySelector";
 import HandlePassword from "../HandlePassword";
+import Resize from "../ResizeInput";
 let loginDiv = getElementById("login");
 
 // console.log(loginDiv);
@@ -15,9 +16,11 @@ const SavePassword = () => {
 		"blur",
 		(e) => {
 			HandlePassword();
+			Resize();
+
 			setTimeout(() => {
 				Clear(loginDiv);
-			}, 1000);
+			}, 900);
 		},
 		{ once: true },
 	);
@@ -29,9 +32,9 @@ const SavePassword = () => {
 
 			if (e.key === "Enter") {
 				HandlePassword();
+				Resize();
 			}
 
-			// console.log("Hello, World!");
 			setTimeout(() => {
 				Clear(loginDiv);
 			}, 1000);
